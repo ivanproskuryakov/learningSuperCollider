@@ -59,6 +59,7 @@ p = Pbind(
 Pdefn(\midiCtrl, 33);
 Pdefn(\panCtrl, Pif(Pkey(\harmonic) > 15, -1, 1));
 Pdefn(\panCtrl, Pwhite(-1, 1, inf));
+Pdefn(\clipCtrl, 2.1);
 
 p.stop;
 
